@@ -1,4 +1,4 @@
 language: csharp
-solution: abot.sln
+solution: Abot.sln
 install:
-  - nuget restore abot.sln
+  - nuget restore Abot.sln
