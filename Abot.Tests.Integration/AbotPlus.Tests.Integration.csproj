@@ -100,9 +100,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Abot\Abot.csproj">
+    <ProjectReference Include="..\Abot\AbotPlus.csproj">
       <Project>{0CDCD537-4B0E-4514-966F-F425CDC92BA4}</Project>
-      <Name>Abot</Name>
+      <Name>AbotPlus</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

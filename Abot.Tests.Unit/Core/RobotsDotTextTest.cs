@@ -235,7 +235,8 @@ Disallow: /?category=another&color=red");
 Disallow: /?/
 Disallow: /category/");
 
-            Assert.IsTrue(_unitUnderTest.IsUrlAllowed(_rootUri.AbsoluteUri, userAgentString));
+            var res = _unitUnderTest.IsUrlAllowed(_rootUri.AbsoluteUri, userAgentString);
+            Assert.IsTrue(res);
         }
 
         [Test]

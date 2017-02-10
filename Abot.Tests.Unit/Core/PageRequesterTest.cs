@@ -69,7 +69,9 @@ namespace Abot.Tests.Unit.Core
             Assert.IsNotNull(result.HtmlDocument);
             Assert.IsNotNull(result.CsQueryDocument);
             Assert.AreEqual(403, (int)result.HttpWebResponse.StatusCode);
-            Assert.AreEqual("The remote server returned an error: (403) Forbidden.", result.WebException.Message);
+
+            //At different from the English-language version of Windows, this string is displayed on the non-English language
+            //Assert.AreEqual("The remote server returned an error: (403) Forbidden.", result.WebException.Message);
             Assert.IsTrue(result.Content.Bytes.Length > 0);
         }
 
@@ -86,7 +88,8 @@ namespace Abot.Tests.Unit.Core
             Assert.IsNotNull(result.HtmlDocument);
             Assert.IsNotNull(result.CsQueryDocument);
             Assert.AreEqual(404, (int)result.HttpWebResponse.StatusCode);
-            Assert.AreEqual("The remote server returned an error: (404) Not Found.", result.WebException.Message);
+            //At different from the English-language version of Windows, this string is displayed on the non-English language
+            //Assert.AreEqual("The remote server returned an error: (404) Not Found.", result.WebException.Message);
             Assert.IsTrue(result.Content.Bytes.Length > 0);
         }
 
@@ -103,7 +106,8 @@ namespace Abot.Tests.Unit.Core
             Assert.IsNotNull(result.HtmlDocument);
             Assert.IsNotNull(result.CsQueryDocument);
             Assert.AreEqual(500, (int)result.HttpWebResponse.StatusCode);
-            Assert.AreEqual("The remote server returned an error: (500) Internal Server Error.", result.WebException.Message);
+            //At different from the English-language version of Windows, this string is displayed on the non-English language
+            //Assert.AreEqual("The remote server returned an error: (500) Internal Server Error.", result.WebException.Message);
             Assert.IsTrue(result.Content.Bytes.Length > 0);
         }
 
@@ -122,7 +126,8 @@ namespace Abot.Tests.Unit.Core
             Assert.AreEqual(503, (int)result.HttpWebResponse.StatusCode);
             Assert.IsTrue(result.Content.Bytes.Length > 0);
 
-	        Assert.AreEqual("The remote server returned an error: (503) Server Unavailable.", result.WebException.Message);
+            //At different from the English-language version of Windows, this string is displayed on the non-English language
+            //Assert.AreEqual("The remote server returned an error: (503) Server Unavailable.", result.WebException.Message);
         }
 
         [Test, Ignore("Cox intercepts 502 status and returns 200")]
@@ -175,7 +180,8 @@ namespace Abot.Tests.Unit.Core
             Assert.IsNotNull(result.HtmlDocument);
             Assert.IsNotNull(result.CsQueryDocument);
             Assert.AreEqual(404, (int)result.HttpWebResponse.StatusCode);
-            Assert.AreEqual("The remote server returned an error: (404) Not Found.", result.WebException.Message);
+            //At different from the English-language version of Windows, this string is displayed on the non-English language
+            //Assert.AreEqual("The remote server returned an error: (404) Not Found.", result.WebException.Message);
             Assert.IsTrue(result.Content.Bytes.Length > 0);
         }
 

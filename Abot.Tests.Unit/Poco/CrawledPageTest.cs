@@ -122,7 +122,7 @@ namespace Abot.Tests.Unit.Poco
             Assert.IsTrue(unitUnderTest.CsQueryDocument.ToString().Length > 1);
         }
 
-        [Test, Ignore("This test passes but takes 28 seconds to run")]
+        [Test/*, Ignore("This test passes but takes 28 seconds to run")*/]
         public void CsQueryDocument_ToManyNestedTagsInSource2_DoesNotCauseStackOverflowException()
         {
             CrawledPage unitUnderTest = new CrawledPage(new Uri("http://a.com/")) 
